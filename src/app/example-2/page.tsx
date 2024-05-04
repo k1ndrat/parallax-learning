@@ -1,8 +1,8 @@
 import Parallax from "@/components/Parallax";
 import React from "react";
 
-const page = () => {
+const Page = () => {
   return <Parallax />;
 };
 
-export default page;
+export default Page;

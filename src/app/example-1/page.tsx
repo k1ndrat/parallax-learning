@@ -11,7 +11,7 @@ const url = (name: string, wrap = false) =>
     wrap ? ")" : ""
   }`;
 
-const page = () => {
+const Page = () => {
   const parallax = useRef<IParallax>(null);
   const ref = useRef(null!);
 
@@ -87,4 +87,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;

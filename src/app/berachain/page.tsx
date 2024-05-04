@@ -1,7 +1,7 @@
 import Chain from "@/sections/Chain";
 import Community from "@/sections/Community";
 
-const page = () => {
+const Berachain = () => {
   return (
     <div className="layout">
       <div className="overflow-clip" style={{ backgroundColor: "#15161F" }}>
@@ -12,4 +12,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Berachain;
