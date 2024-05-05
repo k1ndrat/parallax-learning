@@ -100,7 +100,7 @@ const Pol = ({ setBackgroundDark, setBackgroundLight }: Props) => {
   return (
     <section
       ref={parallaxRef}
-      className="relative w-full h-screen flex flex-col gap-16 items-center justify-center text-white px-10 py-48"
+      className="relative w-full h-screen flex flex-col gap-16 items-center justify-center text-white "
     >
       <Image
         className="absolute left-[20%] top-4"

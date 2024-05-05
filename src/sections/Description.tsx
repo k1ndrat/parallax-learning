@@ -10,7 +10,7 @@ const Description = () => {
   const parallaxRef = useRef(null!);
   const panda = useRef(null!);
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     let ctx = gsap.context(() => {
       gsap.registerPlugin(ScrollTrigger);
       var tl = gsap.timeline({
@@ -22,6 +22,9 @@ const Description = () => {
           scrub: true,
           // pin: true,
           // markers: true,
+          onUpdate: (self) => {
+            console.log(self.progress);
+          },
         },
       });
       tl.fromTo(
@@ -30,7 +33,7 @@ const Description = () => {
           opacity: 0,
         },
         {
-          duration: 0.1,
+          duration: 0.3,
           opacity: 1,
           ease: "none",
           // yoyo: true,
@@ -40,13 +43,16 @@ const Description = () => {
       tl.fromTo(
         panda.current,
         {
-          x: "57vw",
+          // duration: 1,
+          x: "58vw",
           y: "-100vh",
+          // ease: "none",
         },
         {
           duration: 1,
-          x: "-57vw",
+          x: "-58vw",
           y: "100vh",
+          // x: "-200%",
           ease: "none",
           // yoyo: true,
         },
@@ -62,20 +68,34 @@ const Description = () => {
   return (
     <section
       ref={parallaxRef}
-      className="relative w-full h-screen flex flex-col gap-16 items-center justify-center text-white px-10 py-48"
+      className="relative w-full flex flex-col items-center gap-16 text-white "
       // style={{ height: "200vh" }}
     >
       <Image
         ref={panda}
-        className="absolute"
+        className="absolute top-0"
+        style={
+          {
+            // transform: "translate(1100px, -50px)",
+            // y: "-50px",
+          }
+        }
         src={
           "https://www.berachain.com/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fduv0g402y%2Fimage%2Fupload%2Ff_auto%2Cq_auto%2Fv1%2FnewFoundation%2Fajbjedoi2l3vdvjsnn1o&w=1080&q=75"
         }
         alt="Panda"
         height={1000}
-        width={350}
+        width={400}
       />
-      Description
+      <div className="h-screen flex flex-col items-center justify-end">
+        <h3 className="relative z-10 text-center text-xl font-thin text-white lg:text-5xl">
+          A modular EVM <br /> compatible L1 blockchain <br /> powered by
+          <span className="bg-gradient-to-r from-[#FEC600] to-[#FDE619] bg-clip-text font-semibold text-transparent">
+            {" "}
+            Proof Of Liquidity
+          </span>
+        </h3>
+      </div>
     </section>
   );
 };
