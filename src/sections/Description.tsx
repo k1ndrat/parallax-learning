@@ -68,7 +68,7 @@ const Description = () => {
   return (
     <section
       ref={parallaxRef}
-      className="relative w-full flex flex-col items-center gap-16 text-white "
+      className="relative w-full h-screen flex flex-col items-center gap-16 text-white "
       // style={{ height: "200vh" }}
     >
       <Image
@@ -88,7 +88,7 @@ const Description = () => {
         width={400}
       />
       <div className="h-screen flex flex-col items-center justify-end">
-        <h3 className="relative z-10 text-center text-xl font-thin text-white lg:text-5xl">
+        <h3 className="relative z-10 text-center text-xl font-semibold text-white lg:text-5xl">
           A modular EVM <br /> compatible L1 blockchain <br /> powered by
           <span className="bg-gradient-to-r from-[#FEC600] to-[#FDE619] bg-clip-text font-semibold text-transparent">
             {" "}
