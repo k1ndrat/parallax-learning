@@ -3,8 +3,11 @@
 import Stars from "@/components/Stars";
 import Chain from "@/sections/Chain";
 import Community from "@/sections/Community";
+import Description from "@/sections/Description";
 import Ecosystem from "@/sections/Ecosystem";
+import Hero from "@/sections/Hero";
 import Investors from "@/sections/Investors";
+import Pol from "@/sections/Pol";
 import Principles from "@/sections/Principles";
 import Ufo from "@/sections/Ufo";
 import { useEffect, useRef, useState } from "react";
@@ -46,6 +49,12 @@ const Berachain = () => {
         <Ecosystem setBackgroundDark={setBackgroundDark} />
         <Principles />
         <Investors />
+        <Pol
+          setBackgroundDark={setBackgroundDark}
+          setBackgroundLight={setBackgroundLight}
+        />
+        <Description />
+        <Hero />
       </div>
     </div>
   );
