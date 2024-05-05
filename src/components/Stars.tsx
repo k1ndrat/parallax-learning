@@ -59,4 +59,5 @@ const Star = ({
   );
 };
 
+Stars.displayName = "Stars";
 export default Stars;
