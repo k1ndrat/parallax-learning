@@ -11,6 +11,7 @@ import Pol from "@/sections/Pol";
 import Principles from "@/sections/Principles";
 import Ufo from "@/sections/Ufo";
 import { useEffect, useRef, useState } from "react";
+import Image from "next/image";
 
 const Berachain = () => {
   const containerRef = useRef<HTMLInputElement>(null!);
@@ -20,9 +21,11 @@ const Berachain = () => {
   const [height, setHeight] = useState(0);
 
   useEffect(() => {
-    window.scrollTo({ top: 100000 });
+    // window.scrollTo({ top: 100000 });
     setHeight(window.innerHeight);
-    // console.log(window.innerHeight);
+
+    const hero = document.querySelector("#hero");
+    hero && hero.scrollIntoView({ behavior: "instant", block: "end" });
   }, [setHeight]);
 
   return (

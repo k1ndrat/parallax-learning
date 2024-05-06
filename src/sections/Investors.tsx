@@ -54,6 +54,7 @@ const Investors = () => {
               alt="Tribe Capital"
               height={200}
               width={300}
+              loading="eager"
             />
           </div>
           <div className="shrink-0">
@@ -64,6 +65,7 @@ const Investors = () => {
               alt="Tribe Capital"
               height={200}
               width={300}
+              loading="eager"
             />
           </div>
           <div className="shrink-0">
@@ -74,6 +76,7 @@ const Investors = () => {
               alt="Tribe Capital"
               height={200}
               width={300}
+              loading="eager"
             />
           </div>
           <div className="shrink-0">
@@ -84,6 +87,7 @@ const Investors = () => {
               alt="Tribe Capital"
               height={200}
               width={300}
+              loading="eager"
             />
           </div>
           <div className="shrink-0">
@@ -94,6 +98,7 @@ const Investors = () => {
               alt="Tribe Capital"
               height={200}
               width={300}
+              loading="eager"
             />
           </div>
         </div>
@@ -109,6 +114,7 @@ const Investors = () => {
               alt="Tribe Capital"
               height={200}
               width={300}
+              loading="eager"
             />
           </div>
           <div className="shrink-0">
@@ -119,6 +125,7 @@ const Investors = () => {
               alt="Tribe Capital"
               height={200}
               width={300}
+              loading="eager"
             />
           </div>
           <div className="shrink-0">
@@ -129,6 +136,7 @@ const Investors = () => {
               alt="Tribe Capital"
               height={200}
               width={300}
+              loading="eager"
             />
           </div>
           <div className="shrink-0">
@@ -139,6 +147,7 @@ const Investors = () => {
               alt="Tribe Capital"
               height={200}
               width={300}
+              loading="eager"
             />
           </div>
           <div className="shrink-0">
@@ -149,6 +158,7 @@ const Investors = () => {
               alt="Tribe Capital"
               height={200}
               width={300}
+              loading="eager"
             />
           </div>
         </div>

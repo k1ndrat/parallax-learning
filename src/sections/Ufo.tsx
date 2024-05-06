@@ -131,6 +131,7 @@ const Ufo = ({ setBackgroundDark, setBackgroundLight }: Props) => {
           alt="ufo"
           height={512}
           width={512}
+          loading="eager"
         />
         <Image
           style={{
@@ -145,6 +146,7 @@ const Ufo = ({ setBackgroundDark, setBackgroundLight }: Props) => {
           ref={ufoLight}
           height={512}
           width={512}
+          loading="eager"
         />
       </div>
       <div

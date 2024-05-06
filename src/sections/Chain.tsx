@@ -157,6 +157,7 @@ const Chain = () => {
             alt="bear"
             height={1024}
             width={1024}
+            loading="eager"
           />
         </div>
         <div className="" style={{ flexBasis: "19%" }}>
@@ -167,6 +168,7 @@ const Chain = () => {
             alt="bear"
             height={1024}
             width={1024}
+            loading="eager"
           />
         </div>
         <div className="" style={{ flexBasis: "22%" }}>
@@ -177,6 +179,7 @@ const Chain = () => {
             alt="bear"
             height={1024}
             width={1024}
+            loading="eager"
           />
         </div>
         <div className="" style={{ flexBasis: "22%" }}>
@@ -187,6 +190,7 @@ const Chain = () => {
             alt="bear"
             height={1024}
             width={1024}
+            loading="eager"
           />
         </div>
         <div className="" style={{ flexBasis: "42%" }}>
@@ -197,6 +201,7 @@ const Chain = () => {
             alt="bear"
             height={1024}
             width={1024}
+            loading="eager"
           />
         </div>
       </div>

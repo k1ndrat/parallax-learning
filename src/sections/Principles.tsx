@@ -27,6 +27,7 @@ const Principles = () => {
             alt={"alt"}
             height={256}
             width={256}
+            loading="eager"
           />
         </article>
         <article className="flex flex-row xl:flex-col justify-between items-center relative rounded-2xl bg-white bg-opacity-10 backdrop-blur-2xl">
@@ -48,6 +49,7 @@ const Principles = () => {
             alt={"alt"}
             height={256}
             width={256}
+            loading="eager"
           />
         </article>
         <article className="flex flex-row xl:flex-col justify-between items-center relative rounded-2xl bg-white bg-opacity-10 backdrop-blur-2xl">
@@ -69,6 +71,7 @@ const Principles = () => {
             alt={"alt"}
             height={256}
             width={256}
+            loading="eager"
           />
         </article>
       </div>

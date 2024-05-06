@@ -93,6 +93,7 @@ const Community = () => {
           alt="community-img"
           width={1024}
           height={1024}
+          loading="eager"
         />
 
         {/* bear */}
@@ -108,6 +109,7 @@ const Community = () => {
               alt="discord"
               width={1024}
               height={1024}
+              loading="eager"
             />
           </a>
         </div>
@@ -125,6 +127,7 @@ const Community = () => {
               alt="discord"
               width={256}
               height={256}
+              loading="eager"
             />
           </a>
         </div>
@@ -139,6 +142,7 @@ const Community = () => {
               alt="twitter"
               width={256}
               height={256}
+              loading="eager"
             />
           </a>
         </div>
@@ -153,6 +157,7 @@ const Community = () => {
               alt="telegram"
               width={256}
               height={256}
+              loading="eager"
             />
           </a>
         </div>
@@ -170,6 +175,7 @@ const Community = () => {
               alt="opensea"
               width={256}
               height={256}
+              loading="eager"
             />
           </a>
         </div>
@@ -187,6 +193,7 @@ const Community = () => {
               alt="github"
               width={256}
               height={256}
+              loading="eager"
             />
           </a>
         </div>
@@ -201,6 +208,7 @@ const Community = () => {
               alt="settings"
               width={256}
               height={256}
+              loading="eager"
             />
           </a>
         </div>

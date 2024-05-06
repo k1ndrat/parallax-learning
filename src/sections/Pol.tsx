@@ -111,6 +111,7 @@ const Pol = ({ setBackgroundDark, setBackgroundLight }: Props) => {
         alt="cloud"
         height={800}
         width={600}
+        loading="eager"
       />
       <Image
         className="absolute right-[-200px] top-64"
@@ -121,6 +122,7 @@ const Pol = ({ setBackgroundDark, setBackgroundLight }: Props) => {
         alt="cloud"
         height={800}
         width={700}
+        loading="eager"
       />
       <Image
         className="absolute bottom-48 left-[-10%]"
@@ -131,6 +133,7 @@ const Pol = ({ setBackgroundDark, setBackgroundLight }: Props) => {
         alt="cloud"
         height={800}
         width={700}
+        loading="eager"
       />
       <div ref={ball1} className="flex flex-col items-center gap-4">
         <div className="w-fit whitespace-nowrap rounded-xl bg-white bg-opacity-10 p-[6px] text-[10px] font-medium text-white backdrop-blur-2xl sm:text-sm md:text-xl xl:p-2">
@@ -143,6 +146,7 @@ const Pol = ({ setBackgroundDark, setBackgroundLight }: Props) => {
           alt="ball"
           height={100}
           width={100}
+          loading="eager"
         />
       </div>
       <div className="grid grid-cols-3">
@@ -157,6 +161,7 @@ const Pol = ({ setBackgroundDark, setBackgroundLight }: Props) => {
             alt="ball"
             height={100}
             width={100}
+            loading="eager"
           />
         </div>
         <Image
@@ -167,6 +172,7 @@ const Pol = ({ setBackgroundDark, setBackgroundLight }: Props) => {
           alt="Bear"
           height={512}
           width={512}
+          loading="eager"
         />
         <div ref={ball3} className="flex flex-col items-center gap-4">
           <div className="w-fit whitespace-nowrap rounded-xl bg-white bg-opacity-10 p-[6px] text-[10px] font-medium text-white backdrop-blur-2xl sm:text-sm md:text-xl xl:p-2">
@@ -179,6 +185,7 @@ const Pol = ({ setBackgroundDark, setBackgroundLight }: Props) => {
             alt="ball"
             height={100}
             width={100}
+            loading="eager"
           />
         </div>
       </div>

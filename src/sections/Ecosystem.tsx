@@ -105,6 +105,7 @@ const Ecosystem = ({ setBackgroundDark }: Props) => {
         alt="tablo"
         height={800}
         width={800}
+        loading="eager"
       />
 
       <Image
@@ -116,6 +117,7 @@ const Ecosystem = ({ setBackgroundDark }: Props) => {
         alt="cloud"
         height={800}
         width={800}
+        loading="eager"
       />
       <Image
         className="absolute right-0"
@@ -126,6 +128,7 @@ const Ecosystem = ({ setBackgroundDark }: Props) => {
         alt="cloud"
         height={800}
         width={800}
+        loading="eager"
       />
       <Image
         className="absolute bottom-0 left-0"
@@ -136,6 +139,7 @@ const Ecosystem = ({ setBackgroundDark }: Props) => {
         alt="cloud"
         height={800}
         width={800}
+        loading="eager"
       />
     </section>
   );
