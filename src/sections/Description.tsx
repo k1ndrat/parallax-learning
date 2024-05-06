@@ -11,7 +11,34 @@ const Description = () => {
   const parallaxRef = useRef(null!);
   const panda = useRef(null!);
 
+  const cloud1 = useRef(null!);
+  const cloud2 = useRef(null!);
+  const cloud3 = useRef(null!);
+
   useLayoutEffect(() => {
+    const cloud1Anim = gsap.fromTo(
+      cloud1.current,
+      { y: 15 },
+      { y: -15, duration: 2.2, repeat: -1, yoyo: true, ease: "sine.inOut" }
+    );
+    const cloud2Anim = gsap.fromTo(
+      cloud2.current,
+      { y: -25 },
+      { y: 25, duration: 2.2, repeat: -1, yoyo: true, ease: "sine.inOut" }
+    );
+    const cloud3Anim = gsap.fromTo(
+      cloud3.current,
+      { y: -25 },
+      {
+        y: 25,
+        duration: 2.2,
+        delay: 0.5,
+        repeat: -1,
+        yoyo: true,
+        ease: "sine.inOut",
+      }
+    );
+
     let ctx = gsap.context(() => {
       gsap.registerPlugin(ScrollTrigger);
       var tl = gsap.timeline({
@@ -63,6 +90,9 @@ const Description = () => {
 
     return () => {
       ctx.revert();
+      cloud1Anim.kill();
+      cloud2Anim.kill();
+      cloud3Anim.kill();
     };
   }, []);
 
@@ -89,6 +119,40 @@ const Description = () => {
       className="relative w-full min-h-screen flex flex-col items-center gap-6 md:gap-16 text-white"
     >
       <Image
+        className="absolute left-[20%] top-4"
+        ref={cloud1}
+        src={
+          "https://www.berachain.com/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fduv0g402y%2Fimage%2Fupload%2Ff_auto%2Cq_auto%2Fv1%2Ffoundation%2Fclouds%2Fjzqmdph0majfloy6frit&w=1080&q=75"
+        }
+        alt="cloud"
+        height={800}
+        width={600}
+        loading="eager"
+      />
+      <Image
+        className="absolute right-[-100px] top-64"
+        ref={cloud2}
+        src={
+          "https://www.berachain.com/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fduv0g402y%2Fimage%2Fupload%2Ff_auto%2Cq_auto%2Fv1%2Ffoundation%2Fclouds%2Fxhte7rvze5dioycj6ayd&w=1920&q=75"
+        }
+        alt="cloud"
+        height={800}
+        width={700}
+        loading="eager"
+      />
+      <Image
+        className="absolute bottom-[30%] left-[2%]"
+        ref={cloud3}
+        src={
+          "https://www.berachain.com/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fduv0g402y%2Fimage%2Fupload%2Ff_auto%2Cq_auto%2Fv1%2Ffoundation%2Fclouds%2Fhy4mgihwgh8lbr03pmkb&w=1080&q=75"
+        }
+        alt="cloud"
+        height={800}
+        width={700}
+        loading="eager"
+      />
+
+      <Image
         ref={panda}
         className="absolute top-0 hidden md:block"
         src={
@@ -100,7 +164,7 @@ const Description = () => {
         loading="eager"
       />
       <Image
-        className="block md:hidden"
+        className="block md:hidden z-10"
         src={
           "https://www.berachain.com/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fduv0g402y%2Fimage%2Fupload%2Ff_auto%2Cq_auto%2Fv1%2FnewFoundation%2Fajbjedoi2l3vdvjsnn1o&w=1080&q=75"
         }

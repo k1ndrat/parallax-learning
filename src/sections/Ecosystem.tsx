@@ -29,6 +29,8 @@ const Ecosystem = ({ setBackgroundDark }: Props) => {
   const parallaxRef = useRef(null);
 
   const imgRef = useRef(null);
+  const tabloMob = useRef(null);
+
   const cloud1 = useRef(null);
   const cloud2 = useRef(null);
   const cloud3 = useRef(null);
@@ -66,6 +68,19 @@ const Ecosystem = ({ setBackgroundDark }: Props) => {
       );
     });
 
+    const tabloMobAnim = gsap.fromTo(
+      tabloMob.current,
+      { y: 15 },
+      {
+        y: -15,
+        duration: 2,
+        delay: 0.5,
+        repeat: -1,
+        yoyo: true,
+        ease: "sine.inOut",
+      }
+    );
+
     const cloud1Anim = gsap.fromTo(
       cloud1.current,
       { y: 15 },
@@ -97,10 +112,21 @@ const Ecosystem = ({ setBackgroundDark }: Props) => {
       className="relative w-full h-screen flex items-center justify-center text-4xl"
     >
       <Image
-        className="z-10"
+        className="z-10 hidden md:block "
         ref={imgRef}
         src={
           "https://www.berachain.com/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fduv0g402y%2Fimage%2Fupload%2Fv1689960325%2FnewFoundation%2Fsrdbicq2ogvsrkf9xas9&w=1920&q=75"
+        }
+        alt="tablo"
+        height={800}
+        width={800}
+        loading="eager"
+      />
+      <Image
+        className="z-10 block md:hidden w-[60%]"
+        ref={tabloMob}
+        src={
+          "https://www.berachain.com/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fduv0g402y%2Fimage%2Fupload%2Ff_auto%2Cq_auto%2Fv1689960325%2FnewFoundation%2Ffvyvavz4niizdbq8wlxa&w=640&q=75"
         }
         alt="tablo"
         height={800}
