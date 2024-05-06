@@ -123,7 +123,7 @@ const Ufo = ({ setBackgroundDark, setBackgroundLight }: Props) => {
       ref={parallaxRef}
       id="ufo"
     >
-      <div className="max-w-md	" ref={ufoRef}>
+      <div className="max-w-72 md:max-w-md" ref={ufoRef}>
         <Image
           src={
             "https://www.berachain.com/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fduv0g402y%2Fimage%2Fupload%2Ff_auto%2Cq_auto%2Fv1%2Ffoundation%2Fai8ugwpgumlf4oekcnof&w=1080&q=75"
@@ -151,7 +151,7 @@ const Ufo = ({ setBackgroundDark, setBackgroundLight }: Props) => {
       </div>
       <div
         ref={ufoArticles}
-        className="flex flex-col gap-5 max-w-4xl text-center md:flex-row"
+        className="flex flex-col gap-5 max-w-4xl text-center md:flex-row px-8"
       >
         <article
           ref={article1}
@@ -167,6 +167,7 @@ const Ufo = ({ setBackgroundDark, setBackgroundLight }: Props) => {
             Visit
           </Link>
         </article>
+
         <article
           ref={article2}
           className="border-border flex-1 animate-float rounded-xl border bg-slate-800 bg-opacity-30 px-4 py-2 text-white opacity-80 md:py-6"
@@ -181,6 +182,7 @@ const Ufo = ({ setBackgroundDark, setBackgroundLight }: Props) => {
             Visit
           </Link>
         </article>
+
         <article
           ref={article3}
           className="border-border flex-1 animate-float rounded-xl border bg-slate-800 bg-opacity-30 px-4 py-2 text-white opacity-80 md:py-6"

@@ -84,7 +84,7 @@ const Community = () => {
 
   return (
     <section className="relative w-full h-screen flex items-center justify-center">
-      <div className="relative max-w-md">
+      <div className="relative max-w-[65%] sm:max-w-md">
         {/* Commurity img */}
         <Image
           src={

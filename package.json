@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@gsap/react": "^2.1.1",
+    "@react-hook/media-query": "^1.1.1",
     "@react-spring/parallax": "^9.7.3",
     "@react-spring/web": "^9.7.3",
     "gsap": "^3.12.5",

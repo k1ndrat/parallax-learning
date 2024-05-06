@@ -12,6 +12,7 @@ import Principles from "@/sections/Principles";
 import Ufo from "@/sections/Ufo";
 import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
+import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 
 const Berachain = () => {
   const containerRef = useRef<HTMLInputElement>(null!);
@@ -26,6 +27,16 @@ const Berachain = () => {
 
     const hero = document.querySelector("#hero");
     hero && hero.scrollIntoView({ behavior: "instant", block: "end" });
+
+    const resreshOnScroll = () => {
+      ScrollTrigger.refresh();
+    };
+
+    window.addEventListener("resize", resreshOnScroll);
+
+    return () => {
+      window.removeEventListener("resize", resreshOnScroll);
+    };
   }, [setHeight]);
 
   return (

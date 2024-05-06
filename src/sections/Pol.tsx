@@ -140,6 +140,7 @@ const Pol = ({ setBackgroundDark, setBackgroundLight }: Props) => {
           Solve stake centralization
         </div>
         <Image
+          className="w-[60px] sm:w-[100px]"
           src={
             "https://www.berachain.com/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fduv0g402y%2Fimage%2Fupload%2Ff_auto%2Cq_auto%2Fv1%2FnewFoundation%2FORB_epdyas&w=256&q=75"
           }
@@ -155,6 +156,7 @@ const Pol = ({ setBackgroundDark, setBackgroundLight }: Props) => {
             Solve stake centralization
           </div>
           <Image
+            className="w-[60px] sm:w-[100px]"
             src={
               "https://www.berachain.com/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fduv0g402y%2Fimage%2Fupload%2Ff_auto%2Cq_auto%2Fv1%2FnewFoundation%2FORB_epdyas&w=256&q=75"
             }
@@ -179,6 +181,7 @@ const Pol = ({ setBackgroundDark, setBackgroundLight }: Props) => {
             Solve stake centralization
           </div>
           <Image
+            className="w-[60px] sm:w-[100px]"
             src={
               "https://www.berachain.com/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fduv0g402y%2Fimage%2Fupload%2Ff_auto%2Cq_auto%2Fv1%2FnewFoundation%2FORB_epdyas&w=256&q=75"
             }
@@ -189,7 +192,10 @@ const Pol = ({ setBackgroundDark, setBackgroundLight }: Props) => {
           />
         </div>
       </div>
-      <div ref={text} className="text-4xl max-w-screen-lg text-center">
+      <div
+        ref={text}
+        className="text-2xl md:text-4xl max-w-screen-lg text-center"
+      >
         <span className="text-amber-300 font-semibold">Proof of Liquidity</span>{" "}
         aligns network security and liquidity by validators rewarding liquidity
         providers on Berachain with the non-purchasable staking token of the

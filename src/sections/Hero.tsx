@@ -98,11 +98,11 @@ const Hero = () => {
       ref={parallaxRef}
       className="relative w-full min-h-screen flex flex-col gap-16 items-center justify-center text-white"
     >
-      <div className="w-full h-96"></div>
+      <div className="w-full md:h-96"></div>
       {/* <div className="h-48"></div> */}
       <h1
         ref={title}
-        className="fixed top-[50%] translate-y-[-50%] text-center text-6xl font-semibold text-white sm:text-[80px] md:text-[100px] lg:text-[150px] xl:text-[200px] "
+        className="fixed top-[50%] translate-y-[-50%] text-center text-6xl font-semibold text-white sm:text-[80px] md:text-[100px] lg:text-[150px] xl:text-[200px] opacity-0"
       >
         Berachain
       </h1>
@@ -114,9 +114,20 @@ const Hero = () => {
         alt=""
         width={2000}
         height={0}
-        className="w-full z-10"
+        className="w-full z-10 hidden md:block"
         loading="eager"
       />
+      <Image
+        src={
+          "https://www.berachain.com/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fduv0g402y%2Fimage%2Fupload%2Ff_auto%2Cq_auto%2Fv1%2FnewFoundation%2Fw6cctgedcwr9rkgg6x4k&w=1920&q=75"
+        }
+        alt=""
+        width={2000}
+        height={0}
+        className="w-full z-10 block md:hidden"
+        loading="eager"
+      />
+
       <div
         ref={upOnly}
         className="absolute bottom-[20vh] z-10 text-center text-4xl font-extrabold text-[#2F4D24] xl:text-8xl"

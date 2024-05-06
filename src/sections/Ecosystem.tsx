@@ -60,8 +60,8 @@ const Ecosystem = ({ setBackgroundDark }: Props) => {
       });
       tl2.fromTo(
         imgRef.current,
-        { x: "-150%", ease: "none" },
-        { x: "150%", ease: "none" },
+        { x: "-80vw", ease: "none" },
+        { x: "80vw", ease: "none" },
         0
       );
     });
