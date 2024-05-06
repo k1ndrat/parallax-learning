@@ -194,7 +194,7 @@ const Pol = ({ setBackgroundDark, setBackgroundLight }: Props) => {
       </div>
       <div
         ref={text}
-        className="text-2xl md:text-4xl max-w-screen-lg text-center"
+        className="text-lg sm:text-2xl md:text-4xl max-w-screen-lg text-center px-8"
       >
         <span className="text-amber-300 font-semibold">Proof of Liquidity</span>{" "}
         aligns network security and liquidity by validators rewarding liquidity

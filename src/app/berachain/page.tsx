@@ -41,7 +41,7 @@ const Berachain = () => {
 
   return (
     <div className="layout" ref={containerRef}>
-      <div className="overflow-clip relative">
+      <div className="overflow-clip relative text-white">
         {/* BG */}
         <div
           className="fixed w-screen h-screen"
